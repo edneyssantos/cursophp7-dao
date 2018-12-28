@@ -20,9 +20,14 @@
 	//echo json_encode($search);
 
 	//Teste de login
-	$usuario = new Usuario();
-	$usuario->login("root","123456");
-	echo $usuario;
+	//$usuario = new Usuario();
+	//$usuario->login("root","123456");
+	//echo $usuario;
+
+	//Insert de um usuario novo
+	$aluno = new Usuario("aluno","@lun0");
+	$aluno->insert();
+	echo $aluno;
 
 
 ?>
