@@ -30,9 +30,15 @@
 	//echo $aluno;
 
 	//Alterando informacoes do Usuario
-	$usuario = new usuario();
-	$usuario->loadbyid(8);
-	$usuario->update("professor", "147258");
+	//$usuario = new usuario();
+	//$usuario->loadbyid(8);
+	//$usuario->update("professor", "147258");
+	//echo $usuario;
+
+	//Apagando um usuario
+	$usuario = new Usuario();
+	$usuario->loadbyid(7);
+	$usuario->delete();
 	echo $usuario;
 
 
