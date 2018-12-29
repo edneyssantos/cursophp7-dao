@@ -25,9 +25,15 @@
 	//echo $usuario;
 
 	//Insert de um usuario novo
-	$aluno = new Usuario("aluno","@lun0");
-	$aluno->insert();
-	echo $aluno;
+	//$aluno = new Usuario("aluno","@lun0");
+	//$aluno->insert();
+	//echo $aluno;
+
+	//Alterando informacoes do Usuario
+	$usuario = new usuario();
+	$usuario->loadbyid(8);
+	$usuario->update("professor", "147258");
+	echo $usuario;
 
 
 ?>
